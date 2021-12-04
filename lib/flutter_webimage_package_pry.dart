@@ -2,6 +2,8 @@ library flutter_webimage_package_pry;
 
 import 'package:flutter/material.dart';
 
+import 'image_service.dart';
+
 Widget WebImagePry(String? url,{
   Key? key,
   double scale = 1.0,
@@ -25,7 +27,7 @@ Widget WebImagePry(String? url,{
   int? cacheWidth,
   int? cacheHeight,
 }){
-  return WebImagePry(url,
+  return WebImage(url,
     key: key,
     fit: fit,
     height: height,
